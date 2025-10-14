@@ -1,0 +1,6 @@
+// Script simple pour afficher un message après l'envoi du formulaire
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.getElementById('msg').textContent = "✅ Merci ! Votre message a été bien envoyé (exemple).";
+  this.reset();
+});
